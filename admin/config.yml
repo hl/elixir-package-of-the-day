@@ -6,26 +6,27 @@ media_folder: "images" # Media files will be stored in the repo under images
 public_folder: "/images" # The src attribute for uploaded media will begin with /images
 
 collections: # A list of collections the CMS should be able to edit  
-  - name: "page"
-    label: "Page"
+  - label: "Page"
+    name: "page"
     folder: "pages"
     create: true
     slug: "{{permalink}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "select", options: ["about", "blog", "contact", "gallery", "page"]}
+      - {label: "Layout", name: "layout", widget: "select", options: ["page"]}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
-  - name: "package"
-    label: "Package"
+  - label: "Package"
+    name: "package"
     folder: "_packages"
     create: true
     slug: "{{permalink}}"
     fields:
       - {label: "Layout", name: "layout", widget: "select", options: ["page"]}
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Featured", name: "featured", widget: "boolean"}
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
-      - {label: "Hex.pm", name: "hex", widget: "string"}
-      - {label: "Github.com", name: "github", widget: "string"}
+      - {label: "Hex", name: "hex", widget: "string"}
+      - {label: "Github", name: "github", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
