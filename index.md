@@ -2,7 +2,7 @@
 layout: home
 ---
 
-{% assign featured_package = site.packages | where: "featured", "true" | first %}
+{% assign featured_package = site.packages | where: "featured", true | first %}
 
 ### This weeks featured package
 
