@@ -3,5 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-
-Elixir.cool
+Welcome at Elixir.cool
