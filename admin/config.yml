@@ -17,23 +17,15 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
 
-  - name: "data"
-    label: "Data"
-    files: 
-      - name: "featured_package"
-        label: "Featured Package"
-        file: "_data/featured_package.yml"
-        fields: 
-          - {label: "name", name: "Name", widget: "string"}
-          - {label: "description", name: "Description", widget: "markdown"}
-          - {label: "hex", name: "Hex.pm URL", widget: "string"}
-          - {label: "github", name: "GitHub.com URL", widget: "string"}
-
-      - name: "past_packages"
-        label: "Past packages"
-        file: "_data/past_packages.yml"
-        fields:
-          - {label: "name", name: "Name", widget: "string"}
-          - {label: "description", name: "Description", widget: "markdown"}
-          - {label: "hex", name: "Hex.pm URL", widget: "string"}
-          - {label: "github", name: "GitHub.com URL", widget: "string"}
+  - name: "package"
+    label: "Package"
+    folder: "_packages"
+    create: true
+    slug: "{{permalink}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "select", options: ["page"]}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string", default: "//"}
+      - {label: "Hex.pm", name: "hex", widget: "string"}
+      - {label: "Github.com", name: "github", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}

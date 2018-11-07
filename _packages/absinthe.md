@@ -1,5 +1,9 @@
+---
+layout: page
 name: Absinthe
-description: >-
-  GraphQL for Elixir
+permalink: /packages/absinthe
 hex: https://hex.pm/packages/absinthe
 github: https://github.com/absinthe-graphql/absinthe
+---
+
+GraphQL for Elixir
