@@ -1,0 +1,5 @@
+name: Absinthe
+description: >-
+  GraphQL for Elixir
+hex: https://hex.pm/packages/absinthe
+github: https://github.com/absinthe-graphql/absinthe
