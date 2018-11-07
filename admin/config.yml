@@ -19,7 +19,8 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "featured_package"
     label: "Featured package"
-    files: "_data/featured_package.yml"
+    files: 
+      - "_data/featured_package.yml"
     extension: "yml"
     format: "yml"
     fields:
@@ -30,7 +31,8 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: "past_packages"
     label: "Past packages"
-    files: "_data/past_packages.yml"
+    files: 
+      - "_data/past_packages.yml"
     extension: "yml"
     format: "yml"
     fields:
