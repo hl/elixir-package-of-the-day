@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Absinthe
-featured: false
+featured: true
 permalink: /packages/absinthe
 hex: 'https://hex.pm/packages/absinthe'
 github: 'https://github.com/absinthe-graphql/absinthe'
