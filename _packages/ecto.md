@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Ecto
-featured: true
+featured: false
 permalink: /packages/ecto
 hex: 'https://hex.pm/packages/ecto'
 github: 'https://github.com/elixir-ecto/ecto'
